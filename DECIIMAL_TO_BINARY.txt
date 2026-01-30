@@ -1,0 +1,16 @@
+package number_system;
+
+public class decimal_to_binary {
+
+	public static void main(String[] args) {
+		String binary="";
+		int dec=173,rem=0;
+		while(dec>0) {
+			rem=dec%2;
+			binary=rem+binary;
+			dec/=2;
+		}
+		System.out.println(binary);
+	}
+
+}

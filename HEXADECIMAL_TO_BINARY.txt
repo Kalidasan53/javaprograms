@@ -1,0 +1,40 @@
+package number_system;
+
+import java.util.Scanner;
+
+public class hexa_binary {
+
+	public static void main(String[] args) {
+	  String hexa=" ";
+	  String bin=" ";
+	  System.out.print("enter the hexa decimal:");
+	  Scanner sc = new Scanner(System.in);
+	  hexa=sc.nextLine().toUpperCase();
+	  char c1=' ';
+	  int value=0;
+	  for(int i=0;i<hexa.length();i++) {
+		  
+		  c1=hexa.charAt(i);
+		  if(c1>='0' && c1<='9') {
+			   value=c1-'0';
+		  }
+		  else if(c1>='A' && c1<='F') {
+			    value=c1-'A'+10;
+		  }
+		  else {
+			  System.out.println("invalid input");
+			  return;
+		  }
+
+		String  binaryString=" ";
+		for(int j=0;j<4;j++) {
+			binaryString=(value%2)+binaryString;
+			value=value/2;
+		}
+      bin=bin+binaryString;
+		  
+	  }
+System.out.println(bin);
+	}
+
+}

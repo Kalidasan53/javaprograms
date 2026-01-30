@@ -1,0 +1,26 @@
+package number_system;
+
+import java.util.Scanner;
+
+public class decimal_hexa {
+
+	public static void main(String[] args) {
+		String hex="";
+		Scanner sc = new Scanner(System.in);
+
+		int dec=sc.nextInt();
+		while(dec>0) {
+			int rem=dec%16;
+			if(rem<10) {
+				hex+=rem;
+			}
+			else if(rem>=10) {
+				hex=(char)((rem-10)+'A')+hex;
+				
+			}
+			dec/=16;
+		}
+		System.out.println(hex);
+	}
+
+}

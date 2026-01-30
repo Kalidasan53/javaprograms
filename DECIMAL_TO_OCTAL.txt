@@ -1,0 +1,15 @@
+package number_system;
+
+public class decimal_to_octal {
+
+	public static void main(String[] args) {
+		String oct=" ";
+		int dec=173,rem=0;
+		while(dec>0) {
+			rem=dec%8;
+			System.out.println(rem);
+		}
+System.out.println(oct);
+	}
+
+}

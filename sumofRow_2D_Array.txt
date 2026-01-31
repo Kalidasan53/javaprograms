@@ -1,0 +1,27 @@
+package array;
+
+import java.util.Scanner;
+
+public class sumofRow_2D_Array {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println(" matrix 1 row and columns:");
+		int row=sc.nextInt();
+		int column=sc.nextInt();
+		System.out.println("enter the matrix");
+		int a[][]=new int[row][column];
+		for(int i=0;i<row;i++) {
+			for(int j=0;j<column;j++) {
+				a[i][j]=sc.nextInt();
+			}}
+		for(int j=0;j<column;j++) {
+	       int sum=0;
+	     for(int i=0;i<row;i++)
+			 {
+				sum+=a[i][j];	
+			}
+			System.out.println((j+1)+"column sum is:"+sum);
+	}
+
+	}}

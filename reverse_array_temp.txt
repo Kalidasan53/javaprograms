@@ -1,0 +1,21 @@
+package array;
+
+public class reverse_array {
+
+	public static void main(String[] args) {
+		int []a= {3,2,4,8,1,54};
+		int temp;
+		for(int i=0;i<a.length;i++) {
+			for(int j=i+1;j<a.length;j++) {
+				
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				
+			}
+			System.out.print(a[i]+" ");
+     
+		}
+	}
+
+}

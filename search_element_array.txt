@@ -1,0 +1,26 @@
+package array;
+
+import java.util.Scanner;
+
+public class search_element {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int[] a= {1,3,4,6,7,34,98};
+	System.out.println("enter the search element:");
+	int num=sc.nextInt();
+	boolean value=false;
+	for(int i=0;i<a.length;i++) {
+		if(a[i]==num) {
+			value=true;
+			break;
+		  }
+		
+	}
+	if(value) {
+		System.out.println("element found");
+	}
+	else {
+		System.out.println("not element found");
+	}
+}
+}

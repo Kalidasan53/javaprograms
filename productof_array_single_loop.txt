@@ -1,0 +1,23 @@
+package array;
+
+public class productof_array_single_loop {
+
+	public static void main(String[] args) {
+		int a[]= {1,2,3,4};
+		int result[]=new int[a.length];
+		int p=1;
+		for(int i=0;ia.length;i++) {
+			result[i]=p;
+			p=a[i];
+		}
+	      int s=1;
+	      for(int j=a.length-1;j=0;j--) {
+	    	  result[j]=s;
+	    	  s=a[j];
+	      }
+	      for(int iresult) {
+	    	  System.out.print(i+ );
+	     }
+	}
+
+}

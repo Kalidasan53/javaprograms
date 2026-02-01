@@ -1,0 +1,33 @@
+package array;
+
+public class rotate_array {
+
+	public static void main(String[] args) {
+		int a[]= {1,2,3,4,5};
+		int b[]= {5,3,1,4,2};
+		int n=a.length;
+		boolean isrotate =false;
+		if(a.length == b.length) {
+			int c=0;
+			for(int i=0;i<n;i++) {
+				for(int j=0;j<n;j++) {
+					if(a[(i+j)%n]==b[j]) {
+						c++;
+					}
+				}
+				if(c==n) {
+					isrotate=true;
+					break;
+				}
+			}
+			
+		}
+		if(isrotate) {
+			System.out.println("b is rotate of a");
+		}
+		else {
+			System.out.println("b is not rotation of a");
+		}
+	}
+
+}

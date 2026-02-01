@@ -1,0 +1,29 @@
+package array;
+
+public class frequency_count_duplicate {
+    public static void main(String[] args) {
+        int[] a = {2,1,2,2,1,2};
+        boolean[] v = new boolean[a.length];
+     
+
+        for (int i = 0; i < a.length; i++) {
+        	
+        	int freq=1;
+        	
+            if (v[i]==true) {
+                continue;
+            }
+
+          for (int j = i + 1; j < a.length; j++) {
+                if (a[i] == a[j]) {
+                	freq++;
+                    v[j] = true;
+                   
+                }
+                
+            
+        }
+
+        System.out.println(a[i]+" occurs "+freq+" times ");
+    }
+}}
